@@ -1,14 +1,36 @@
+/* TODO add font */
 
-@font-face {
-    font-family: imported;
-    src: url("utils\THEBOLDFONT 2022.otf") format("opentype");
-}
-
-/* Reset default margin and padding for all elements */
-* {
-    margin: 0;
-    padding: 0;
-    font-family: imported;
+body {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    color: black;
     background-color: white;
+    text-decoration: none;
 }
 
+.hello {
+    font-size: 35px;
+}
+
+.irem {
+    font-size: 150px;
+}
+
+.intro {
+    font-style: italic;
+    color: gray;
+    max-width: 800px; /* Adjust the maximum width as needed */
+}
+
+li {
+    list-style-type: none !important ;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited{
+    color: black;
+}
