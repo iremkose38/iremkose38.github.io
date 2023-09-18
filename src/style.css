@@ -17,7 +17,6 @@ body {
 }
 
 .intro {
-    font-style: italic;
     color: gray;
     max-width: 800px; /* Adjust the maximum width as needed */
 }
