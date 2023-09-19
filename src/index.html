@@ -5,27 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Irem's Personal Website</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
-<header>
+<header class="slide-in">
     <h1 class= hello >Hello,</h1>
     <h1 class= irem >I'm Irem</h1>
-    <p class= intro >I'm a computer science student at KuLeuven, deeply passionate about technology and all things digital. When I'm not immersed in lines of code, you'll often find me indulging in the world of K-Dramas and exploring the rich tapestry of Asian culture. Welcome to my digital space, where I blend my academic pursuits with my love for entertainment and culture.</p>
+    <p class= intro >I'm a computer science student at KU leuven, deeply passionate about technology and all things digital. When I'm not immersed in lines of code, you'll often find me indulging in the world of K-Dramas and exploring the rich tapestry of Asian culture. Welcome to my digital space, where I blend my academic pursuits with my love for entertainment and culture.</p>
 </header>
 <div class="bubble-background"></div>
     <nav>
         <ul>
-            <li><class=link a href="#projects">view my projects</a></li>
-            <li><class=link a href="#resume">view my resumé</a></li>
-             <li><class=link a href="#contact">contact me </a></li>
+            <li>
+                <img src="utils/list-check.png">
+                <a href="subpages/projects.html">view my projects</a>
+            </li>
+            <li>
+                <img src="utils/document.png">
+                <a href="subpages/resume.html">view my resumé</a>
+            </li>
+            <li>
+                <img src="utils/envelope.png">
+                <a href="subpages/contact.html">contact me </a>
+            </li>
         </ul>
     </nav>
     <main>
         <!-- Your main content goes here -->
     </main>
     <footer>
-        <class=link a href="#linked">LinkedIn</a>
-        <class=link a href="#git">GitHub</a>
+        <button id ="linkedin-button">LinkedIn</a>
+        <button id="github-button" href="https://github.com/iremkose38" >GitHub</button>
     </footer>
 </body>
 </html>

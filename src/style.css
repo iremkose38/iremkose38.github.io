@@ -1,8 +1,9 @@
-/* TODO add font */
-
 body {
     font-family: Arial, sans-serif;
     font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: black;
     background-color: white;
     text-decoration: none;
@@ -10,7 +11,7 @@ body {
 
 .hello {
     font-size: 35px;
-    top : 440cm;
+    margin-top: 150px;
 }
 
 .irem {
@@ -19,12 +20,34 @@ body {
 
 .intro {
     color: gray;
-    max-width: 800px; /* Adjust the maximum width as needed */
+    max-width: 600px;
 }
 
-li {
-    list-style-type: none !important ;
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
 }
+
+button:hover {
+    color: white;
+}
+
+/* page positioning */
+
+li {
+    list-style-type: none !important;
+    display: flex; /* Use flexbox to align items horizontally */
+    align-items: center;
+    margin-bottom: 25px; /* Add spacing between each menu item */
+}
+
+li img {
+    width: 20px; /* Adjust the icon size as needed */
+    height: 20px;
+    margin-right: 16px; /* Add spacing between the icon and text */
+}
+
 
 a {
     text-decoration: none;
@@ -34,11 +57,21 @@ a {
 a:visited{
     color: black;
 }
+a:hover{
+    text-decoration: underline;
+}
 
-/* pagina indeling */
 
-
-
+footer {
+    position: absolute;
+    left: 0;
+    top: 50%; 
+    transform: rotate(0);
+    white-space: nowrap;
+    writing-mode: vertical-rl;
+    transform-origin: left bottom; 
+    background-color: #ffb6c1;
+}
 
 /* too simple so lets add cute bubbles*/ 
 
@@ -186,4 +219,12 @@ a:visited{
         transform: translateY(-250px) translateX(300px);
         opacity: 0;
     }
+}
+
+
+/* other effects */
+.slide-in {
+    transform: translateX(-15%);
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 0.5s ease; /* Add smooth transitions */
 }
