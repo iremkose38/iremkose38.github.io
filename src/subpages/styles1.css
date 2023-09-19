@@ -1,0 +1,80 @@
+.back-link img {
+    height: 25px;
+}
+
+.title{
+    font-family: Arial, Helvetica, sans-serif;
+    align-self: center;
+}
+
+.project {
+    width: 300px;
+    height: 320px; /* Increased height for better spacing */
+    background-color: #ffb6c1;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease; /* Smooth scale transition on hover */
+    cursor: pointer;
+}
+
+.project:hover {
+    transform: scale(1.05); /* Scale up on hover */
+}
+
+.image {
+    width: 100%;
+}
+
+.image img {
+    max-width: 100%;
+}
+
+.project-title {
+    font-size: 24px;
+    text-align: center;
+    margin: 10px 0;
+    color: #333; /* Change title color to a darker shade */
+    text-decoration: none; 
+    display: block; 
+}
+
+.project-title:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.description {
+    flex-grow: 1;
+}
+
+.description p {
+    font-size: 16px;
+    text-align: center;
+    color: #555; /* Adjust description text color */
+    margin-top: 10px; /* Add space between title and description */
+}
+
+/*info page*/
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+button:hover {
+    color: white;
+}
+  
+footer {
+    position: absolute;
+    left: 0;
+    top: 50%; 
+    transform: rotate(0);
+    white-space: nowrap;
+    writing-mode: vertical-rl;
+    transform-origin: left bottom; 
+    background-color: #ffb6c1;
+}
